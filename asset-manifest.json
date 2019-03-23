@@ -1,13 +1,13 @@
 {
   "main.css": "/quiz/static/css/main.c087a814.chunk.css",
-  "main.js": "/quiz/static/js/main.54fe98a6.chunk.js",
-  "main.js.map": "/quiz/static/js/main.54fe98a6.chunk.js.map",
+  "main.js": "/quiz/static/js/main.2c7f3aa6.chunk.js",
+  "main.js.map": "/quiz/static/js/main.2c7f3aa6.chunk.js.map",
   "runtime~main.js": "/quiz/static/js/runtime~main.e6ae5a1e.js",
   "runtime~main.js.map": "/quiz/static/js/runtime~main.e6ae5a1e.js.map",
-  "static/js/2.55e5c13f.chunk.js": "/quiz/static/js/2.55e5c13f.chunk.js",
-  "static/js/2.55e5c13f.chunk.js.map": "/quiz/static/js/2.55e5c13f.chunk.js.map",
+  "static/js/2.ba44c21f.chunk.js": "/quiz/static/js/2.ba44c21f.chunk.js",
+  "static/js/2.ba44c21f.chunk.js.map": "/quiz/static/js/2.ba44c21f.chunk.js.map",
   "index.html": "/quiz/index.html",
-  "precache-manifest.b76545d11ca7ae92afd3ae575936c6f3.js": "/quiz/precache-manifest.b76545d11ca7ae92afd3ae575936c6f3.js",
+  "precache-manifest.3e8b5d595b9b34a678fe99d617c297f3.js": "/quiz/precache-manifest.3e8b5d595b9b34a678fe99d617c297f3.js",
   "service-worker.js": "/quiz/service-worker.js",
   "static/css/main.c087a814.chunk.css.map": "/quiz/static/css/main.c087a814.chunk.css.map"
 }
