@@ -41,7 +41,8 @@ class Quiz extends Component {
     let newArr = [];
     while (newArr.length < 4) {
       let num = Math.floor(Math.random() * arr.length);
-      newArr.push(arr[num][param])
+      arr[num][param] !== this.state.correct &&
+        newArr.push(arr[num][param])
     }
     return newArr;
   }
