@@ -1,28 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Dashboard from './components/Dashboard';
+import { Grid } from '@material-ui/core'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Grid container style={{height:'100%', width:'100%',display:'flex', flexDirection:'column'}} alignContent='center' justifyContent='center'>
+        <Grid item lg={8} md={12} sm={12} style={{height:'100%', width:'100%',display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}} >
+          <Dashboard style={{ height: '100%', width: '100%',display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center' }} />
+        </Grid>
+      </Grid>
     );
   }
+
 }
 
 export default App;
