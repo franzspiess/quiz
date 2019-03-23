@@ -28,6 +28,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "github-pages": "^3.0.2"
+    "gh-pages": "^2.0.1"
   }
 }
