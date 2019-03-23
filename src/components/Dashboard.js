@@ -13,7 +13,6 @@ class Dashboard extends Component {
     leaderBoard && this.setState({ leaderBoard });
   }
   updateLeaderBoard = obj => {
-    console.log(obj)
     let {leaderBoard} = this.state;
     if (leaderBoard) leaderBoard.push(obj);
     else {
@@ -31,9 +30,8 @@ class Dashboard extends Component {
   render () {
 
     let { leaderBoard } = this.state;
-    console.log(leaderBoard, this.state)
     return (
-      <div style={{width:'100%', height:'100%', display:'flex', flexDirection:'column',flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
+      <div style={{width:'100%', height:'100%', display:'flex', flexDirection:'column',  alignItems:'center', justifyContent:'center'}}>
         <LeaderBoard className="test" leaderBoard={leaderBoard}  />
         <Quiz style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }} update={this.updateLeaderBoard} />
       </div>

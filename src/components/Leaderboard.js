@@ -3,7 +3,6 @@ import React from 'react';
 const LeaderBoard = (props) => {
 
   let {leaderBoard} = props;
-  console.log(leaderBoard, 'AAAAAAAAAAA')
 
   let scores = leaderBoard && leaderBoard.map(el => {
     return (
@@ -11,7 +10,7 @@ const LeaderBoard = (props) => {
       <span>{el.name}</span>
       <span> {el.score[0]}</span>
       <span> of</span>
-      <span> {el.score[1]}</span>
+      <span> {el.score[0] + el.score[1]}</span>
       </div>
     )});
 

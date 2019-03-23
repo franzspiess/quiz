@@ -1,4 +1,5 @@
-##QUIZ APP
+
+# QUIZ APP
 
 A simple quiz about countries.
 
@@ -9,3 +10,7 @@ This responsive app queries an [API](https://countries.trevorblades.com/) with G
 ### Tech
 
 [React](https://reactjs.org/docs/getting-started.html)
+
+### Availability
+
+The page is deployed on [GitHub Pages]()https://franzspiess.github.io/quiz/).

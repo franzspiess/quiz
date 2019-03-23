@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import originalQuestions from '../questions/questions';
-import { Button, Input, Card, RadioGroup, FormControl, FormControlLabel, FormLabel, Radio } from '@material-ui/core';
+import { Button, Input, Card, RadioGroup, FormControl, FormControlLabel, Radio } from '@material-ui/core';
 
 class Quiz extends Component {
   state = {
@@ -38,7 +38,6 @@ class Quiz extends Component {
   }
 
   makeOptions (arr, param) {
-    console.log(arr, param)
     let newArr = [];
     while (newArr.length < 4) {
       let num = Math.floor(Math.random() * arr.length);
@@ -82,9 +81,6 @@ class Quiz extends Component {
     })
   }
 
-  componentDidMount () {
-    // this.setQuestions(questions)
-  }
 
 
   componentDidUpdate (prevProps, prevState) {
@@ -100,7 +96,6 @@ class Quiz extends Component {
   }
 
   handleNameChange = e => {
-    console.log(e)
     this.setState({ name: e.target.value })
   }
 
@@ -114,7 +109,6 @@ class Quiz extends Component {
   }
 
   submitAnswer = e => {
-    console.log(e)
     let { result } = this.state;
     if (!this.state.answer) alert('Please enter an answer!');
     else {
@@ -125,14 +119,11 @@ class Quiz extends Component {
   }
 
   render () {
-    const { update } = this.props;
-    const options = this.state.options && this.state.options.map(el => {
-      console.log(el)
+    const options = this.state.options && this.state.options.map((el,i) => {
       return (
-        <FormControlLabel value={el} control={<Radio />} label={el} />
+        <FormControlLabel value={el} control={<Radio />} label={el} key={i} />
       )
     });
-    console.log(this.state)
     if (!this.state.started) {
       return (
         <Card style={{ display: 'flex', flexDirection: 'column' }}>
@@ -142,7 +133,7 @@ class Quiz extends Component {
       )
     }
     return this.state.options ?
-      <Card style={{ display: 'flex', flexDirection: 'column', width: '80%', height: '70%', justifyContent: 'space-between' }}>
+      <Card style={{ display: 'flex', flexDirection: 'column', width: '80%', height: '60%', justifyContent: 'space-between', paddingTop:'20%' }}>
         <span>{this.state.currentQuestion.question}</span>
         <FormControl>
           <RadioGroup
@@ -152,17 +143,10 @@ class Quiz extends Component {
             onChange={this.handleChoice}
           >
             {options}
-
           </RadioGroup>
           <Button onClick={this.submitAnswer} style={{ color: 'light-green' }}>ANSWER</Button>
-
         </FormControl>
-
-
-
       </Card>
-
-
       : <span>LOADING</span>
   }
 
