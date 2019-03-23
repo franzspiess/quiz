@@ -13,4 +13,4 @@ This responsive app queries an [API](https://countries.trevorblades.com/) with G
 
 ### Availability
 
-The page is deployed on [GitHub Pages]()https://franzspiess.github.io/quiz/).
+The page is deployed on [GitHub Pages](https://franzspiess.github.io/quiz/).
