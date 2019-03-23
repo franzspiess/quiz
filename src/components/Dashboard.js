@@ -20,8 +20,8 @@ class Dashboard extends Component {
       leaderBoard = [];
       leaderBoard.push(obj);
     }
-    console.log(leaderBoard)
     this.setState({leaderBoard});
+    localStorage.setItem('leaderBoard', JSON.stringify(leaderBoard))
   }
 
   componentDidMount () {
